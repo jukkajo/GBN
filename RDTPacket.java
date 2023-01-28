@@ -31,8 +31,9 @@ public class RDTPacket implements Serializable {
 	}
 
         // Setters------------------------
-	public int getSeq() {
-		return seq;
+
+	public void setData(byte[] data) {
+		this.data = data;
 	}
 
 	public void setSeq(int seq) {
@@ -44,9 +45,9 @@ public class RDTPacket implements Serializable {
 	public byte[] getData() {
 		return data;
 	}
-
-	public void setData(byte[] data) {
-		this.data = data;
+	
+	public int getSeq() {
+		return seq;
 	}
         // -------------------------------
 
